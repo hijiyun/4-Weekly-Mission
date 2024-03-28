@@ -23,6 +23,8 @@
     border-color: #ffffff;
     background-color: #ffffff;
     cursor: pointer;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.08);
+    border: none;
 }
 
 .kebab-wrapper button:hover {
