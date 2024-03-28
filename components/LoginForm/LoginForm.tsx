@@ -8,7 +8,7 @@ import fetchlogin from "@/components/api/fetchLogin";
 
 function LoginForm() {
     const router = useRouter();
-
+    
     const {
         control,
         handleSubmit,
@@ -16,7 +16,7 @@ function LoginForm() {
         setError,
     } = useForm({ mode: "onBlur" });
 
-    const onSubmit = async (data) => {
+    const onSubmit = async (data: any) => {
         const response = await fetchlogin(data.email, data.password);
         if (response.success) {
             localStorage.setItem("accessToken", response.accessToken);
@@ -33,7 +33,7 @@ function LoginForm() {
             });
         }
     };
-
+    
     return (
         <form className="login-form" onSubmit={handleSubmit(onSubmit)}>
             <h3>이메일</h3>
