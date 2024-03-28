@@ -1,6 +1,5 @@
 import React from "react";
 import FolderProfile from "../FolderProfile";
-import '@/components/FolderHeader/FolderHeader'
 import Image from "next/image";
 import Link from "next/link";
 import logo from '@/images/logo.svg'

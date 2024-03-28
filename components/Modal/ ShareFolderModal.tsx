@@ -1,5 +1,4 @@
 import React from "react";
-import "@/components/Modal/Modal.module.css";
 import KakaoShareButton from "../api/KakaoShareButton";
 
 export default function ShareFolderModal({ folderName, onShare, onCopyLink }) {

@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "@/components/Nav/Nav";
 
 function Nav() {
   const [folderInfo, setFolderInfo] = useState({

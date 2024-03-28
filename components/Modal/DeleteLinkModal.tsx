@@ -1,5 +1,4 @@
 import React from "react";
-import "@/components/Modal/Modal.module.css";
 
 interface DeleteLinkModalProps {
     url: string;

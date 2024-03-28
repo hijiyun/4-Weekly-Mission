@@ -1,5 +1,4 @@
 import React from "react";
-import "@/components/Modal/Modal.module.css";
 
 export default function RenameFolderModal({ onClose }) {
     return (

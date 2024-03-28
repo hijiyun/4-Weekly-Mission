@@ -1,7 +1,10 @@
 import React from "react";
-import '@/components/ActionContainer/ActionContainer'
 import Modal from "../Modal/Modal";
 import useModal from "../hooks/useModal";
+import Image from "next/image";
+import share from '@/images/share.svg'
+import pen from '@/images/pen.svg'
+import deleteBtn from '@/images/delete.svg'
 
 function ActionContainer({ folderName }) {
   const [modalState, setModalState, onHandleCancel] = useModal();
@@ -19,7 +22,7 @@ function ActionContainer({ folderName }) {
               });
             }}
           >
-            <img src="/images/share.png" />
+            <Image src={share} alt="공유" />
             <div className="action-shared">공유</div>
           </a>
           <a
@@ -30,7 +33,7 @@ function ActionContainer({ folderName }) {
               });
             }}
           >
-            <img src="/images/pen.png" />
+            <Image src={pen} alt="이름 변경" />
             <div className="action-name">이름 변경</div>
           </a>
           <a
@@ -41,7 +44,7 @@ function ActionContainer({ folderName }) {
               });
             }}
           >
-            <img src="/images/delete.png" />
+            <Image src={deleteBtn} alt="삭제"/>
             <div className="action-delete">삭제</div>
           </a>
         </div>

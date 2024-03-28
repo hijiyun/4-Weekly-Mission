@@ -1,5 +1,5 @@
 import React from "react";
-import "@/components/Cardlist/Cardlist";
+// import "@/components/Cardlist/Cardlist";
 import { useFetchCardsData } from "../hooks/ useFetchCardsData";
 
 export interface CardDataProps {

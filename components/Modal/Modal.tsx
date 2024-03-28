@@ -6,7 +6,8 @@ import RenameFolderModal from "./RenameFolderModal";
 import ShareFolderModal from "./ ShareFolderModal";
 import DeleteLinkModal from "./DeleteLinkModal";
 import { Folder } from "../interfaces/model";
-import './Modal.module.css'
+import cancel from '@/images/cancel2.png'
+import Image from "next/image";
 
 interface FolderName {
     id: string;
@@ -80,7 +81,7 @@ function Modal({ values, onClose, folderName, folders, userId }: ModalProps) {
             <div className="modal-background" onClick={handleBackgroundClick} />
             <div className="modal-container">
                 <button onClick={closeModal} className="modal-cancel-btn">
-                    <img src="/images/cancel2.png" alt="취소버튼" />
+                    <Image src={cancel} alt="취소버튼" />
                 </button>
                 {values.target === "이름 변경" && (
                     <RenameFolderModal onClose={closeModal} />

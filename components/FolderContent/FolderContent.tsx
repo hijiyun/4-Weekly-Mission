@@ -1,11 +1,12 @@
 import React, { useState } from "react";
-import "@/components/FolderContent/FolderContent";
 import ActionContainer from "../ActionContainer/ActionContainer";
 import LinkCard from "../LinkCard/LinkCard";
 import { calculateTimePassed, formatDate } from "../ utils";
 import useModal from "../hooks/useModal";
 import Modal from "../Modal/Modal";
 import { Folder, Link } from "../interfaces/model";
+import Image from "next/image";
+import add from '@/images/folderAdd.svg'
 
 interface FolderContentProps {
   folders: Folder[];
@@ -51,7 +52,7 @@ function FolderContent({ folders, links, onFolderClick }: FolderContentProps) {
         </div>
         <a className="folder-add-box">
           <p>폴더추가</p>
-          <img className="folder-add" src="/images/add.png" />
+          <Image className="folder-add" src={add} alt="add 버튼"/>
         </a>
       </div>
       <div className="links-container-box">

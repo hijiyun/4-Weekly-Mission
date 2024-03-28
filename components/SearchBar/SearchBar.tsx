@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "@/components/SearchBar/SearchBar";
+import Image from "next/image";
+import search from '@/images/Search.svg'
+import close from '@/images/close.svg'
 
 function SearchBar({ setSearchTerm }) {
   const [inputValue, setInputValue] = useState("");
@@ -21,7 +23,7 @@ function SearchBar({ setSearchTerm }) {
   return (
     <div className="search-bar-box">
       <form className="search-bar" onSubmit={handleSearchSubmit}>
-        <img src="/images/Search.png" alt="Search" />
+        <Image src={search} alt="Search" />
         <input
           type="text"
           placeholder="링크를 검색해 보세요."
@@ -31,8 +33,8 @@ function SearchBar({ setSearchTerm }) {
         <button type="submit" style={{ display: "none" }}>
           검색
         </button>
-        <img
-          src="/images/close.svg"
+        <Image
+          src={close}
           alt="Close"
           onClick={handleClearSearch}
           style={{ cursor: "pointer" }}

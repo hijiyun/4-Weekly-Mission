@@ -8,6 +8,6 @@ export interface Link {
     url: string;
     title: string;
     description: string;
-    imageSource?: string;
+    image_source?: string;
     created_at: string;
 }

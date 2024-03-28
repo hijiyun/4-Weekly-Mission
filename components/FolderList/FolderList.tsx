@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useFetchFolders } from "../hooks/useFetchFolders";
 import { fetchFolders } from "../api/fetchFolders";
 import FolderContent from "../FolderContent/FolderContent";
-import "@/components/FolderList/FolderList";
 import { Link } from "../interfaces/model";
 
 interface FolderListProps {
