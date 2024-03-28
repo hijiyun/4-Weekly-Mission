@@ -176,3 +176,31 @@
     border: none;
     cursor: pointer;
 }
+
+.modal-shared-icon .facebook-icon {
+    width: 43px;
+    height: 43px;
+    background-color: #1877F2;
+    border-radius: 100px;
+    padding-top: 5.5px;
+    padding-left: 6.5px;
+}
+
+.modal-shared-icon .chat-icon {
+    width: 43px;
+    height: 43px;
+    background-color: #FEE500;
+    border-radius: 100px;
+    padding-top: 5.5px;
+    padding-right: 3.5px;
+}
+
+.modal-shared-icon .link-icon {
+    width: 43px;
+    height: 43px;
+    background: rgba(0, 0, 0, 0.059);
+    box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 100px;
+    padding-top: 5.5px;
+    padding-right: 4px;
+}

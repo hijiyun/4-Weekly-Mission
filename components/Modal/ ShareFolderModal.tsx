@@ -1,5 +1,8 @@
 import React from "react";
 import KakaoShareButton from "../api/KakaoShareButton";
+import Image from "next/image";
+import facebook from '@/images/facebook.svg'
+import link from '@/images/link.svg'
 
 export default function ShareFolderModal({ folderName, onShare, onCopyLink }) {
     return (
@@ -8,11 +11,11 @@ export default function ShareFolderModal({ folderName, onShare, onCopyLink }) {
             <h3>{folderName}</h3>
             <div className="modal-shared-icon">
                 <KakaoShareButton />
-                <button onClick={() => onShare("facebook")}>
-                    <img src="/images/Telegram.png" alt="Facebook share" />
+                <button className="facebook-icon" onClick={() => onShare("facebook")}>
+                    <Image src={facebook} width={23} alt="Facebook share" />
                 </button>
-                <button onClick={onCopyLink}>
-                    <img src="/images/More.png" alt="Copy link" />
+                <button className="link-icon" onClick={onCopyLink}>
+                    <Image src={link} alt="Copy link" />
                 </button>
             </div>
         </>

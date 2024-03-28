@@ -12,6 +12,8 @@ import '@/components/Modal/Modal.css'
 import "@/components/Nav/Nav.css";
 import "@/components/Cardlist/Cardlist.css";
 import "@/components/Input/Input.css";
+import "@/components/KebabMenu/KebabMenu.css";
+
 
 export default function App({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />

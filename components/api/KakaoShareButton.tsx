@@ -1,8 +1,10 @@
 import { useEffect } from "react";
+import Image from "next/image";
+import kakao from '@/images/chat.svg'
 
 const KakaoShareButton = () => {
     const realUrl =
-        "https://65a51c5548eafc32d5a3a2c9--clinquant-licorice-99c7b0.netlify.app/";
+        "localhost:3000";
 
     const loadKakaoSDK = (callback) => {
         const script = document.createElement("script");
@@ -47,8 +49,8 @@ const KakaoShareButton = () => {
     };
 
     return (
-        <button className="grey-btn" onClick={shareKakao}>
-            <img src="/images/Chat.png" />
+        <button className="grey-btn chat-icon" onClick={shareKakao}>
+            <Image src={kakao} alt="카카오톡 공유하기" />
         </button>
     );
 };
