@@ -61,6 +61,7 @@ function SignupBox() {
                 className={styles.signupForm}
                 onSubmit={handleSubmit(onSubmit)}
             >
+                <h3 className={styles.signuptext}>이메일</h3>
                 <Controller
                     name="email"
                     control={control}
@@ -110,6 +111,7 @@ function SignupBox() {
                     </p>
                 )}
 
+                <h3 className={styles.signuptext}>비밀번호</h3>
                 <Controller
                     name="password"
                     control={control}
@@ -139,6 +141,7 @@ function SignupBox() {
                     </p>
                 )}
 
+                <h3 className={styles.signuptext}>비밀번호 확인</h3>
                 <Controller
                     name="confirmPassword"
                     control={control}
