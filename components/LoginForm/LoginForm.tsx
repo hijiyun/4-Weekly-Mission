@@ -16,8 +16,20 @@ function LoginForm() {
         setError,
     } = useForm({ mode: "onBlur" });
 
-    const onSubmit = async (data: any) => {
-        const response = await fetchlogin(data.email, data.password);
+    const onSubmit = async (data) => {
+        try {
+            const response = await fetchlogin(data.email, data.password);
+            handleLoginResponse(response, setError, router);
+        } catch (error) {
+            console.error("로그인 요청 중 오류 발생:", error.message);
+            setError("email", {
+                type: "manual",
+                message: "로그인 요청 중 오류가 발생했습니다.",
+            });
+        }
+    };
+    
+    const handleLoginResponse = (response, setError, router) => {
         if (response.success) {
             localStorage.setItem("accessToken", response.accessToken);
             localStorage.setItem("refreshToken", response.refreshToken);
@@ -25,11 +37,11 @@ function LoginForm() {
         } else {
             setError("email", {
                 type: "manual",
-                message: "이메일을 확인해 주세요.",
+                message: response.message || "이메일을 확인해 주세요.",
             });
             setError("password", {
                 type: "manual",
-                message: "비밀번호를 확인해 주세요.",
+                message: response.message || "비밀번호를 확인해 주세요.",
             });
         }
     };
