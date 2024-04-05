@@ -1,27 +1,19 @@
+import { instance } from "./instance";
+
 async function fetchsignup(email, password) {
     try {
-        const response = await fetch(
-            "https://bootcamp-api.codeit.kr/api/sign-up",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ email, password }),
-            }
-        );
-        const data = await response.json();
+        const response = await instance.post("sign-up", { email, password });
 
         if (response.status === 200) {
             return {
                 success: true,
-                accessToken: data.accessToken,
-                refreshToken: data.refreshToken,
+                accessToken: response.data.accessToken,
+                refreshToken: response.data.refreshToken,
             };
         } else {
             return {
                 success: false,
-                message: data.message || "회원가입 오류가 발생했습니다.",
+                message: response.data.message || "회원가입 오류가 발생했습니다.",
             };
         }
     } catch (error) {
