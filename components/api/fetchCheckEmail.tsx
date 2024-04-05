@@ -1,20 +1,13 @@
+import { instance } from "./instance";
+
 async function fetchcheckemail(email) {
     try {
-        const response = await fetch(
-            "https://bootcamp-api.codeit.kr/api/check-email",
-            {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify({ email }),
-            }
-        );
+        const response = await instance.post("check-email", { email });
 
         if (response.status === 200) {
             return { available: true, message: "" };
         } else if (response.status === 409) {
-            const data = await response.json();
+            const data = response.data;
             return {
                 available: false,
                 message: data.message || "이미 사용 중인 이메일입니다.",
