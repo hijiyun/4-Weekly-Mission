@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import Profile from "@/components/profile";
-import "@/components/Header/Header";
+import "@/components/Common/Header/Header";
 import Image from "next/image";
 import logo from '@/images/logo.svg'
 

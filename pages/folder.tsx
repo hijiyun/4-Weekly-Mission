@@ -4,7 +4,7 @@ import FolderHeader from "@/components/FolderHeader/FolderHeader";
 import LinkForm from "@/components/LinkForm/LinkForm";
 import SearchBar from "@/components/SearchBar/SearchBar";
 import FolderList from "@/components/FolderList/FolderList";
-import Footer from "@/components/Footer/Footer";
+import Footer from "@/components/Common/Footer/Footer";
 import FloatingActionButton from "@/components/FloatingActionButton/FloatingActionButton";
 
 function Folder() {
