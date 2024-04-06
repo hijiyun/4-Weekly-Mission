@@ -5,6 +5,7 @@ import Image from "next/image";
 import share from '@/images/share.svg'
 import pen from '@/images/pen.svg'
 import deleteBtn from '@/images/delete.svg'
+import Link from "next/link";
 
 function ActionContainer({ folderName }) {
   const [modalState, setModalState, onHandleCancel] = useModal();
@@ -14,7 +15,7 @@ function ActionContainer({ folderName }) {
       <p>{folderName}</p>
       {folderName !== "전체" && (
         <div className="action-container-icon">
-          <a
+          <Link
             onClick={(e) => {
               setModalState({
                 visibility: true,
@@ -24,7 +25,7 @@ function ActionContainer({ folderName }) {
           >
             <Image src={share} alt="공유" />
             <div className="action-shared">공유</div>
-          </a>
+          </Link>
           <a
             onClick={(e) => {
               setModalState({

@@ -2,7 +2,7 @@
 import React from "react";
 import { useForm, Controller } from "react-hook-form";
 import { useRouter } from "next/navigation";
-import styles from "@/components/LoginForm/ LoginForm.module.css";
+import styles from '@/components/Auth/LoginForm/LoginForm.module.css'
 import Input from "../Input/Input";
 import fetchlogin from "@/api/fetchLogin";
 

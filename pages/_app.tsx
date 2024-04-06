@@ -7,11 +7,11 @@ import "@/components/SearchBar/SearchBar.css";
 import "@/components/FolderList/FolderList.css";
 import "@/components/FolderContent/FolderContent.css";
 import "@/components/LinkCard/LinkCard.css";
-import "@/components/Footer/Footer.css";
+import "@/components/Common/Footer/Footer.css";
 import '@/components/Modal/Modal.css'
-import "@/components/Nav/Nav.css";
+import "@/components/Common/Nav/Nav.css";
 import "@/components/Cardlist/Cardlist.css";
-import "@/components/Input/Input.css";
+import "@/components/Auth/Input/Input.css";
 import "@/components/KebabMenu/KebabMenu.css";
 
 

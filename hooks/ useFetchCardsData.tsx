@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { calculateTimePassed, formatDate } from "../components/ utils";
+import { calculateTimePassed, formatDate } from "../components/utils";
 import { CardDataProps } from "../components/Cardlist/Cardlist";
 
 export function useFetchCardsData() {
