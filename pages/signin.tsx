@@ -1,4 +1,4 @@
-import LoginBox from "@/components/LoginBox/LoginBox";
+import LoginBox from "@/components/Auth/LoginBox/LoginBox";
 import style from './signin.module.css'
 
 function signin() {

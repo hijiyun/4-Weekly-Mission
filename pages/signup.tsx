@@ -1,5 +1,5 @@
 import style from "./signup.module.css";
-import SignupBox from "@/components/SignupBox/SignupBox";
+import SignupBox from "@/components/Auth/SignupBox/SignupBox";
 
 function signup() {
     return (
