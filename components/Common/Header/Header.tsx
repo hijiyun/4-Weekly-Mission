@@ -5,7 +5,7 @@ import React, { useEffect, useState } from "react";
 import Profile from "@/components/profile";
 import "@/components/Common/Header/Header";
 import Image from "next/image";
-import logo from '@/images/logo.svg'
+import logo from "@/images/logo.svg";
 
 function Header() {
   const router = useRouter();

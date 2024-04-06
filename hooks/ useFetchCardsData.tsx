@@ -3,32 +3,32 @@ import { calculateTimePassed, formatDate } from "../components/utils";
 import { CardDataProps } from "../components/Cardlist/Cardlist";
 
 export function useFetchCardsData() {
-    const [cardsData, setCardsData] = useState<CardDataProps[]>([]);
+  const [cardsData, setCardsData] = useState<CardDataProps[]>([]);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const response = await fetch(
-                    `https://bootcamp-api.codeit.kr/api/sample/folder`
-                );
-                if (!response.ok) {
-                    throw new Error("Network response was not ok");
-                }
-                const data = await response.json();
-                setCardsData(
-                    data.folder.links.map((link) => ({
-                        ...link,
-                        timePassed: calculateTimePassed(link.createdAt),
-                        formattedDate: formatDate(link.createdAt),
-                    }))
-                );
-            } catch (error) {
-                console.error("Error fetching card data:", error);
-            }
-        };
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const response = await fetch(
+          `https://bootcamp-api.codeit.kr/api/sample/folder`
+        );
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        const data = await response.json();
+        setCardsData(
+          data.folder.links.map((link) => ({
+            ...link,
+            timePassed: calculateTimePassed(link.createdAt),
+            formattedDate: formatDate(link.createdAt),
+          }))
+        );
+      } catch (error) {
+        console.error("Error fetching card data:", error);
+      }
+    };
 
-        fetchData();
-    }, []);
+    fetchData();
+  }, []);
 
-    return cardsData;
+  return cardsData;
 }

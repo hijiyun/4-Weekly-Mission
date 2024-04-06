@@ -1,20 +1,19 @@
-import type { AppProps } from 'next/app'
-import '@/components/FolderHeader/FolderHeader.css'
+import type { AppProps } from "next/app";
+import "@/components/FolderHeader/FolderHeader.css";
 import "@/components/LinkForm/LinkForm.css";
 import "@/components/FloatingActionButton/FloatingActionButton.css";
-import '@/components/ActionContainer/ActionContainer.css'
+import "@/components/ActionContainer/ActionContainer.css";
 import "@/components/SearchBar/SearchBar.css";
 import "@/components/FolderList/FolderList.css";
 import "@/components/FolderContent/FolderContent.css";
 import "@/components/LinkCard/LinkCard.css";
 import "@/components/Common/Footer/Footer.css";
-import '@/components/Modal/Modal.css'
+import "@/components/Modal/Modal.css";
 import "@/components/Common/Nav/Nav.css";
 import "@/components/Cardlist/Cardlist.css";
 import "@/components/Auth/Input/Input.css";
 import "@/components/KebabMenu/KebabMenu.css";
 
-
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return <Component {...pageProps} />;
 }

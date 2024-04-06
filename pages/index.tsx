@@ -1,7 +1,7 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-const inter = Inter({ subsets: ['latin'] })
+import Head from "next/head";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -13,10 +13,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div >
+        <div>
           <p>
             Get started by editing&nbsp;
-            <code >pages/index.tsx</code>
+            <code>pages/index.tsx</code>
           </p>
           <div>
             <a
@@ -24,7 +24,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{' '}
+              By{" "}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
@@ -36,7 +36,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div >
+        <div>
           <Image
             src="/next.svg"
             alt="Next.js Logo"
@@ -46,7 +46,7 @@ export default function Home() {
           />
         </div>
 
-        <div >
+        <div>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             target="_blank"
@@ -102,5 +102,5 @@ export default function Home() {
         </div>
       </main>
     </>
-  )
+  );
 }

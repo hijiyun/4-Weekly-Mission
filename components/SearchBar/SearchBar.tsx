@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import search from '@/images/Search.svg'
-import close from '@/images/close.svg'
+import search from "@/images/Search.svg";
+import close from "@/images/close.svg";
 
 function SearchBar({ setSearchTerm }) {
   const [inputValue, setInputValue] = useState("");

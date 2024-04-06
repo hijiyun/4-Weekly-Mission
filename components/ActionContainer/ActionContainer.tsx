@@ -2,9 +2,9 @@ import React from "react";
 import Modal from "../Modal/Modal";
 import useModal from "../../hooks/useModal";
 import Image from "next/image";
-import share from '@/images/share.svg'
-import pen from '@/images/pen.svg'
-import deleteBtn from '@/images/delete.svg'
+import share from "@/images/share.svg";
+import pen from "@/images/pen.svg";
+import deleteBtn from "@/images/delete.svg";
 import Link from "next/link";
 
 function ActionContainer({ folderName }) {
@@ -45,7 +45,7 @@ function ActionContainer({ folderName }) {
               });
             }}
           >
-            <Image src={deleteBtn} alt="삭제"/>
+            <Image src={deleteBtn} alt="삭제" />
             <div className="action-delete">삭제</div>
           </a>
         </div>

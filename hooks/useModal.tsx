@@ -1,12 +1,12 @@
 import { useState } from "react";
 
 export default function useModal() {
-    const [modalState, setModalState] = useState({
-        visibility: false,
-        target: "",
-    });
+  const [modalState, setModalState] = useState({
+    visibility: false,
+    target: "",
+  });
 
-    const onHandleCancel = (state) => setModalState(state);
+  const onHandleCancel = (state) => setModalState(state);
 
-    return [modalState, setModalState, onHandleCancel];
+  return [modalState, setModalState, onHandleCancel];
 }

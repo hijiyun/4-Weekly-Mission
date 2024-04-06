@@ -3,11 +3,10 @@ import React, { useState } from "react";
 import KebabMenu from "../KebabMenu/KebabMenu";
 import { Link } from "../../interfaces/model";
 import Image from "next/image";
-import noImage from '@/images/noCardImg.png'
-import star from '@/images/star.svg'
-import kebab from '@/images/kebab.svg'
-import link from '@/images/link.svg';
-
+import noImage from "@/images/noCardImg.png";
+import star from "@/images/star.svg";
+import kebab from "@/images/kebab.svg";
+import link from "@/images/link.svg";
 
 interface LinkCardProps {
   link: Link;
@@ -34,25 +33,25 @@ function LinkCard({
   };
 
   function fixImageUrl(imageUrl: string | undefined) {
-    const domainToCheck = 't1.kakaocdn.net';
-    const protocol = 'https://'; // 또는 'http://' 변경 가능
-  
+    const domainToCheck = "t1.kakaocdn.net";
+    const protocol = "https://"; // 또는 'http://' 변경 가능
+
     if (imageUrl && imageUrl.includes(domainToCheck)) {
       // 이미지 URL에 지정된 도메인이 포함되어 있으면 프로토콜을 추가하여 반환
       return `${protocol}${imageUrl}`;
     }
-  
+
     // 포함되어 있지 않으면 그대로 반환
     return imageUrl;
   }
 
-  const imageUrl = fixImageUrl(link?.image_source)
+  const imageUrl = fixImageUrl(link?.image_source);
 
   return (
     <div className="link-card" onClick={handleLinkClick}>
       <div className="card-image-container">
         <Image
-          src={imageUrl} // link?.image_source || noImage -> 이 부분 계속 알 수 없는 에러 발생. 추후에 해결 
+          src={imageUrl} // link?.image_source || noImage -> 이 부분 계속 알 수 없는 에러 발생. 추후에 해결
           width={100}
           height={100}
           alt={link.title}
