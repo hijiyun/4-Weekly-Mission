@@ -32,7 +32,7 @@ function LinkCard({
     window.open(link.url, "_blank");
   };
 
-  function fixImageUrl(imageUrl: string | undefined) {
+  function fixImageUrl(imageUrl?: string) {
     const domainToCheck = "t1.kakaocdn.net";
     const protocol = "https://"; // 또는 'http://' 변경 가능
 
@@ -51,7 +51,7 @@ function LinkCard({
     <div className="link-card" onClick={handleLinkClick}>
       <div className="card-image-container">
         <Image
-          src={imageUrl} // link?.image_source || noImage -> 이 부분 계속 알 수 없는 에러 발생. 추후에 해결
+          src={imageUrl}
           width={100}
           height={100}
           alt={link.title}
