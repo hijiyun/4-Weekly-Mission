@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchFolderProfileData } from "./api/fetchFolderProfileData";
+import { fetchFolderProfileData } from "../api/fetchFolderProfileData";
 
 function FolderProfile() {
     const [profileData, setProfileData] = useState(null);

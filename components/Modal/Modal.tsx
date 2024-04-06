@@ -5,7 +5,7 @@ import DeleteFolderModal from "./DeleteFolderModal";
 import RenameFolderModal from "./RenameFolderModal";
 import ShareFolderModal from "./ ShareFolderModal";
 import DeleteLinkModal from "./DeleteLinkModal";
-import { Folder } from "../interfaces/model";
+import { Folder } from "../../interfaces/model";
 import cancel from '@/images/cancel2.png'
 import Image from "next/image";
 

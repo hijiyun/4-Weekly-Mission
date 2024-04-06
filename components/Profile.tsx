@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { fetchProfileData } from "./api/fetchProfileData";
+import { fetchProfileData } from "../api/fetchProfileData";
 
 function Profile() {
     const [profileData, setProfileData] = useState(null);

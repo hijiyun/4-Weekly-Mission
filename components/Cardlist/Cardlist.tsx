@@ -1,6 +1,6 @@
 import React from "react";
 // import "@/components/Cardlist/Cardlist";
-import { useFetchCardsData } from "../hooks/ useFetchCardsData";
+import { useFetchCardsData } from "../../hooks/ useFetchCardsData";
 
 export interface CardDataProps {
     id: number;

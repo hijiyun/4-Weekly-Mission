@@ -1,5 +1,5 @@
 import React from "react";
-import KakaoShareButton from "../api/KakaoShareButton";
+import KakaoShareButton from "../../api/KakaoShareButton";
 import Image from "next/image";
 import facebook from '@/images/facebook.svg'
 import link from '@/images/link.svg'

@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import ActionContainer from "../ActionContainer/ActionContainer";
 import LinkCard from "../LinkCard/LinkCard";
 import { calculateTimePassed, formatDate } from "../ utils";
-import useModal from "../hooks/useModal";
+import useModal from "../../hooks/useModal";
 import Modal from "../Modal/Modal";
-import { Folder, Link } from "../interfaces/model";
+import { Folder, Link } from "../../interfaces/model";
 import Image from "next/image";
 import add from '@/images/folderAdd.svg'
 

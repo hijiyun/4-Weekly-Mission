@@ -1,6 +1,6 @@
 import Modal from "../Modal/Modal";
 import React from "react";
-import useModal from "../hooks/useModal";
+import useModal from "../../hooks/useModal";
 import Image from "next/image";
 import link from '@/images/link.svg'
 

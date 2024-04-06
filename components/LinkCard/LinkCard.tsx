@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 // import "@/components/LinkCard/LinkCard";
 import KebabMenu from "../KebabMenu/KebabMenu";
-import { Link } from "../interfaces/model";
+import { Link } from "../../interfaces/model";
 import Image from "next/image";
 import noImage from '@/images/noCardImg.png'
 import star from '@/images/star.svg'

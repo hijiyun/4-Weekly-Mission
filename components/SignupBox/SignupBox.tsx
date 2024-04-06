@@ -5,8 +5,8 @@ import { useRouter } from "next/navigation";
 import Input from "../Input/Input";
 import Link from "next/link";
 import styles from "./SignupBox.module.css";
-import fetchcheckemail from "../api/fetchCheckEmail";
-import fetchsignup from "../api/fetchSignUp";
+import fetchcheckemail from "../../api/fetchCheckEmail";
+import fetchsignup from "../../api/fetchSignUp";
 import Image from "next/image";
 import logo from '@/images/logo2.svg'
 import google from '@/images/google.svg'

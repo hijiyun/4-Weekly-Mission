@@ -4,7 +4,7 @@ import { useForm, Controller } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import styles from "@/components/LoginForm/ LoginForm.module.css";
 import Input from "../Input/Input";
-import fetchlogin from "@/components/api/fetchLogin";
+import fetchlogin from "@/api/fetchLogin";
 
 function LoginForm() {
     const router = useRouter();
